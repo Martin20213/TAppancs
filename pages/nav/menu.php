@@ -45,12 +45,14 @@ if (session_status() === PHP_SESSION_NONE) {
             $userData = $stmt->fetch(PDO::FETCH_ASSOC); // Felhasználói adatok lekérése
         ?>
             <div class="user-info" id="user-info">
+                <strong>
                 <?php
                 if ($userData) {
                     echo htmlspecialchars($userData['Vezeteknev']) . " " . htmlspecialchars($userData['Keresztnev'])
                     . " (" . htmlspecialchars($userData['Felhasznalonev']) . ")";
                 }
                 ?>
+                </strong>
             </div>
         <?php 
         } 

@@ -7,6 +7,7 @@ body {
     background-color: rgb(13, 33, 107);
     padding: 0px;
     margin: 0px;
+    color: #eaf7ff;
     
 }
 .login-container{
@@ -20,6 +21,16 @@ body {
     border-radius: 10px;
     border-bottom: solid 5px rgba(0, 0, 0, 0.586);
     border-right: solid 5px rgba(0, 0, 0, 0.586);
+
+}
+
+.gomb{
+    background-color: #2878a7 !important;
+}
+
+.gomb:hover{
+
+    background-color: #3290c6 !important;
 
 }
 
@@ -80,7 +91,7 @@ input, textarea {
 }
 
 input[type="submit"] {
-    background-color: #28a745;
+    background-color: #2878a7;
     color: white;
     border: none;
     cursor: pointer;
@@ -88,7 +99,7 @@ input[type="submit"] {
 }
 
 input[type="submit"]:hover {
-    background-color: #218838;
+    background-color: #2878a7;
 }
 
 .error {
@@ -100,22 +111,24 @@ input[type="submit"]:hover {
 }
 
 .ok{
-    color: green;
+    color: rgb(0, 255, 251);
     text-align: center;
     align-items: center;
-    margin: auto;
+    margin: 10px;
+    padding: 5px;
+
 }
 
 .homegomb{
 
-        margin-top: 10px;
-        padding-top: 10px;
+        margin-top: 40px;
+        padding-top: 20px;
         padding: 10px;
         border-radius: 10px;
         border: 2px solid rgba(0, 0, 0, 0.829);
         text-decoration: none;
         color: rgb(0, 0, 0);
-        background-color: rgba(76, 76, 76, 0.337);
+        background-color: rgba(148, 148, 148, 0.337);
 }
 
 .homegomb:hover{
@@ -124,3 +137,41 @@ input[type="submit"]:hover {
     color: rgb(255, 255, 255);
 }
 
+#name{
+    color: #8dd5ff;
+}
+
+#datum{
+    font-size: 13px;
+}
+
+p{
+    padding:0px;
+    margin: 5px;
+    
+}
+.message {
+    text-align: left;
+    border-bottom: 1.5px solid #9b9b9b;
+    padding: 1px;
+    margin: 5px;
+    background-color: rgb(13, 33, 107);
+    color: rgb(245, 245, 245);
+    border-radius: 10px;
+    
+
+.message:last-child {
+    border-bottom: none;
+}
+
+.uzenet{
+
+    background-color: rgb(46, 57, 125);
+    padding: 5px;
+    margin-left: 0px;
+    border-radius: 10px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 18px ;
+    
+
+}

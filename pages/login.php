@@ -69,7 +69,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
         <form method="POST" action="login">
             <input type="text" name="username" placeholder="Felhasználónév" required>
             <input type="password" name="password" placeholder="Jelszó" required>
-            <input type="submit" value="Bejelentkezés">
+            <input type="submit" class="gomb" value="Bejelentkezés">
 
 
             <?php if (!empty($errorMessage)): ?>

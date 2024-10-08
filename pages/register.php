@@ -91,7 +91,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
             <input type="text" name="phone" placeholder="Telefonszám (nem kötelező)">
             <input type="text" name="username" placeholder="Felhasználónév" required>
             <input type="password" name="password" placeholder="Jelszó" required>
-            <input type="submit" value="Regisztrálok">
+            <input type="submit" class="gomb"  value="Regisztrálok">
 
 
             <?php if (!empty($errorMessage)): ?>

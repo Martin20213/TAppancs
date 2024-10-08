@@ -65,15 +65,17 @@ $messages = $stmt->fetchAll(PDO::FETCH_ASSOC);
         <?php if (count($messages) > 0): ?>
             <?php foreach ($messages as $message): ?>
                 <div class="message">
-                <p><strong><?php echo htmlspecialchars($message['Vezeteknev']) . ' ' . htmlspecialchars($message['Keresztnev']); ?></strong></p>
-                <?php
-// Az Ido mező átkonvertálása olvashatóbb formátumra
-$datetime = new DateTime($message['Ido']);
-$formattedDate = $datetime->format('Y.m.d H:i'); // Formátum módosítása
-?>
-<p><?php echo htmlspecialchars($formattedDate); ?></p>
-
+                    <p id="name"><strong><?php echo htmlspecialchars($message['Vezeteknev']) . ' ' . htmlspecialchars($message['Keresztnev']); ?></strong></p>
+                    <?php
+                    // Az Ido mező átkonvertálása olvashatóbb formátumra
+                    $datetime = new DateTime($message['Ido']);
+                    $formattedDate = $datetime->format('Y.m.d H:i'); // Formátum módosítása
+                    ?>
+                    
+                    <p id="datum"><?php echo htmlspecialchars($formattedDate); ?></p>
+                    <div class="uzenet">
                     <p><?php echo nl2br(htmlspecialchars($message['Uzenet'])); ?></p>
+                </div>
                 </div>
             <?php endforeach; ?>
         <?php else: ?>
@@ -87,6 +89,7 @@ $formattedDate = $datetime->format('Y.m.d H:i'); // Formátum módosítása
         </form>
     </div>
 </div>
+
 
 <script type="text/javascript" src="../js/menu.js"></script>
 </body>
