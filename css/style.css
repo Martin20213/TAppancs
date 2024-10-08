@@ -3,17 +3,45 @@ body {
     font-family: Arial, sans-serif;
     line-height: 1.6;
     padding: 20px;
-    color: rgb(17, 17, 17);
-    background-color: rgb(231, 231, 231);
+    color: rgb(0, 0, 0);
+    background-color: rgb(13, 33, 107);
     padding: 0px;
     margin: 0px;
     
 }
+.login-container{
+  
+  
+    max-width: 400px;
+    margin: 0 auto;
+    align-items: center;  
+    background-color: rgb(235, 235, 235);
+    padding: 10px;
+    border-radius: 10px;
+    border-bottom: solid 5px rgba(0, 0, 0, 0.586);
+    border-right: solid 5px rgba(0, 0, 0, 0.586);
+
+}
+
+.data-container{
+  
+  
+    max-width: 500px;
+    margin: 0 auto;
+    align-items: center;  
+    background-color: rgb(235, 235, 235);
+    padding: 10px;
+    border-radius: 10px;
+    border-bottom: solid 5px rgba(0, 0, 0, 0.586);
+    border-right: solid 5px rgba(0, 0, 0, 0.586);
+
+}
 
 .data {
+    max-width: 500px;
     text-align: center;
     align-items: center;
-    background-color: rgb(225, 225, 225);
+    background-color: rgb(13, 33, 107);
     border-color: 3px solid blue;
     margin: auto;
     padding: 10px;
@@ -95,3 +123,4 @@ input[type="submit"]:hover {
     background-color: rgb(0, 0, 0); 
     color: rgb(255, 255, 255);
 }
+

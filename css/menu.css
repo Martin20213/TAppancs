@@ -13,8 +13,10 @@
 
 }
 
+
+
 li:hover{
-    background-color: rgba(202, 202, 202, 0.352);
+    background-color: rgba(0, 0, 0, 0.321);
     border-radius: 10px;
 }
 
@@ -27,7 +29,7 @@ ul {
 .off-screen-menu{
 
     
-    background-color: rgb(8, 8, 8);
+    background-color: rgb(8, 21, 67);
     color: #ececec;
     height: 100vh;
     width: 100%;
@@ -109,10 +111,21 @@ nav {
     position: relative;
 }
 
+.ham-menu:hover span{ 
+    
+    
+    /*hamburger menü gomb szine hoverre valtozik*/
+
+        background-color: rgb(88, 90, 232);
+
+    } 
+
+
+
 .ham-menu span{
     height: 5px;
     width: 100%;
-    background-color: rgb(27, 27, 27);
+    background-color: rgb(13, 33, 107);
     border-radius: 25px;
     position: absolute;
     top: 50%;

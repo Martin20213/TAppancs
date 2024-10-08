@@ -12,6 +12,7 @@
 
 <?php include 'nav/menu.php'; ?> <!-- Menü beillesztése -->
 <div class="data">
+    <div class="data-container">
 <h1>Üzenőfal</h1>
 
     <p>asd123</p>
@@ -23,7 +24,7 @@
         <input type="submit" value="Küldés">
     </form>
 </div>
-
+</div>
 
 <script type="text/javascript" src="../js/menu.js"></script>
 </body>
