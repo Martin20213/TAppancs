@@ -21,7 +21,7 @@ body {
     border-radius: 10px;
     border-bottom: solid 5px rgba(0, 0, 0, 0.586);
     border-right: solid 5px rgba(0, 0, 0, 0.586);
-
+    color: black;
 }
 
 .gomb{
@@ -40,6 +40,7 @@ body {
     max-width: 500px;
     margin: 0 auto;
     align-items: center;  
+    color: black;
     background-color: rgb(235, 235, 235);
     padding: 10px;
     border-radius: 10px;
