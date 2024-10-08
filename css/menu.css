@@ -57,11 +57,40 @@ nav {
     padding:1 rem;
     display:flex;
     background-color: #ececec;
-        
-    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+   
 }
 
-#login{
+.left-menu, .right-menu {
+    position: absolute; /* A bal és jobb menü abszolút pozicionálása */
+    top:3%;
+    transform: translateY(-50%); /* Vertikális középre igazítás */
+}
+
+.left-menu {
+    left: 20px; /* Bal oldali menü */
+}
+
+.right-menu{
+   
+    right: 40px;
+}
+
+.centered-image-container {
+    text-align: center; /* Középre igazítja a logót */
+}
+
+.centered-image-container img {
+    max-height: 50px; /* A logó maximális magassága */
+}
+.user-info {
+    margin-right: 15px; /* Kicsi távolság a profil és kijelentkezés link között */
+}
+
+
+.login{
 
     float: right;
     
