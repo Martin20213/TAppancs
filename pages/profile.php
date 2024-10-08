@@ -17,8 +17,8 @@
 <?php include 'nav/menu.php'; ?> <!-- Menü beillesztése -->
 
 <div class="data">
-<h1>Welcome to our Website!</h1>
-<p>This is the first page.</p>
+<h1>Profil</h1>
+
 </div>
 
 
