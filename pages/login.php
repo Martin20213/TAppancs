@@ -32,7 +32,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     $stmt->bindParam(':Felhasznalonev', $inputUsername);
     $stmt->execute();
     $user = $stmt->fetch(PDO::FETCH_ASSOC);
-
+    
     
    
 
@@ -43,10 +43,12 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
         $_SESSION['user_logged_in'] = true;
         if($user['Jog_id'] == 3){
             $_SESSION['is_admin'] = true;
+           
             }else{
             $_SESSION['is_admin'] = false;
         }
-        
+
+        $_SESSION['id'] = $user['Felhasznalo_id'];
 
         $_SESSION['username'] = $inputUsername; // opcionális, ha meg akarod jeleníteni
         

@@ -32,7 +32,7 @@ try {
 
 // Új üzenet beszúrása, ha elküldték a formot
 if ($_SERVER['REQUEST_METHOD'] === 'POST' && isset($_POST['message'])) {
-    $felhasznalo_id = isset($_SESSION['felhasznalo_id']) ? $_SESSION['felhasznalo_id'] : '1'; // Példa felhasználó azonosító (ha nincs bejelentkezve)
+    $felhasznalo_id = $_SESSION['id']; // Példa felhasználó azonosító (ha nincs bejelentkezve)
     $uzenet = htmlspecialchars($_POST['message']);
 
     // Üzenet beszúrása az 'uzenofal' táblába

@@ -10,6 +10,17 @@ body {
     color: #eaf7ff;
     
 }
+
+#konti{
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    max-width: 300px;
+    padding: 10px;
+    margin-top: 0px;
+
+}
 .login-container{
   
   
