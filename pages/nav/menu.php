@@ -19,13 +19,18 @@ if (session_status() === PHP_SESSION_NONE) {
         
 </head>
 <body>
-
 <div class="off-screen-menu" onclick="toggleMenu2()">
     <ul>
         <?php if (isset($_SESSION['user_logged_in']) && $_SESSION['user_logged_in']): ?>
             <li><a class="menugomb" href="home">Home</a></li>
             <li><a class="menugomb" href="uzenofal">Üzenőfal</a></li>
-            <li><a class="menugomb" href="kapcsolat">Kapcsolat</a></li>
+            
+            <?php if ($_SESSION['is_admin'] == true): ?>
+                <li><a class="menugomb" href="adminkapcsolat">Kapcsolat</a></li>
+            <?php else: ?>  
+                <li><a class="menugomb" href="kapcsolat">Kapcsolat</a></li>
+            <?php endif; ?>
+            
         <?php else: ?>
             <li><a class="menugomb" href="home">Home</a></li>
             <li><a class="menugomb" href="kapcsolat">Kapcsolat</a></li>

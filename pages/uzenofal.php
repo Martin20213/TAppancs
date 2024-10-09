@@ -60,7 +60,10 @@ $messages = $stmt->fetchAll(PDO::FETCH_ASSOC);
 <div class="data">
     <div class="data-container">
         <h1>Üzenőfal</h1>
-
+        <form method="POST" action="">
+            <input type="text" name="message" placeholder="Írd ide az üzeneted..." required>
+            <input type="submit" value="Küldés">
+        </form>
         <!-- Üzenetek megjelenítése -->
         <?php if (count($messages) > 0): ?>
             <?php foreach ($messages as $message): ?>
@@ -83,10 +86,7 @@ $messages = $stmt->fetchAll(PDO::FETCH_ASSOC);
         <?php endif; ?>
 
         <!-- Üzenet beküldő form -->
-        <form method="POST" action="">
-            <input type="text" name="message" placeholder="Írd ide az üzeneted..." required>
-            <input type="submit" value="Küldés">
-        </form>
+        
     </div>
 </div>
 

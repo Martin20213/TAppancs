@@ -14,7 +14,9 @@
 </head>
 <body>
 
-<?php include 'nav/menu.php'; ?> <!-- Menü beillesztése -->
+<?php include 'nav/menu.php'; 
+
+?> <!-- Menü beillesztése -->
 
 <div class="data">
 <h1>Welcome to our Website!</h1>

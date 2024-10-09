@@ -33,9 +33,21 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     $stmt->execute();
     $user = $stmt->fetch(PDO::FETCH_ASSOC);
 
+    
+   
+
+
+
     if ($user && password_verify($inputPassword, $user['Jelszo'])) {
         // Sikeres bejelentkezés, beállítjuk a session változót
         $_SESSION['user_logged_in'] = true;
+        if($user['Jog_id'] == 3){
+            $_SESSION['is_admin'] = true;
+            }else{
+            $_SESSION['is_admin'] = false;
+        }
+        
+
         $_SESSION['username'] = $inputUsername; // opcionális, ha meg akarod jeleníteni
         
         header('Location: home'); // Továbbirányítás a főoldalra
