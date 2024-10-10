@@ -10,6 +10,20 @@ body {
     color: #eaf7ff;
     
 }
+#kozepre{
+
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    
+
+}
+.data-container-export{
+
+    padding: 5px;
+    width: 300px;
+    
+}
 
 #konti{
 
@@ -35,8 +49,23 @@ body {
     color: black;
 }
 
+.exportbutton{
+
+    
+    background-color: #2878a7 !important;
+    color: white !important;
+    padding: 5px;
+    border-radius: 5px;
+}
+
+.exportbutton:hover{
+
+    
+    background-color: #3290c6 !important;
+}
 .gomb{
     background-color: #2878a7 !important;
+    
 }
 
 .gomb:hover{

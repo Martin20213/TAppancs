@@ -27,6 +27,7 @@ if (session_status() === PHP_SESSION_NONE) {
             
             <?php if ($_SESSION['is_admin'] == true): ?>
                 <li><a class="menugomb" href="adminkapcsolat">Kapcsolat</a></li>
+                <li><a class="menugomb" href="adminexport">Export</a></li>
             <?php else: ?>  
                 <li><a class="menugomb" href="kapcsolat">Kapcsolat</a></li>
             <?php endif; ?>
